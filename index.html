@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>YESYES YES IM SO HAPPY</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="phone" id="phone">
+  <div class="screen">
+
+    <!-- HOME SCREEN -->
+    <div id="home" class="app-screen active">
+      <h2>Home</h2>
+      <div class="app-grid">
+        <div class="app" onclick="openApp('calculator')">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/calculator.png" alt="Calculator Icon">
+          <span>Calculator</span>
+        </div>
+        <div class="app" onclick="openApp('notes')">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/note.png" alt="Notes Icon">
+          <span>Notes</span>
+        </div>
+        <div class="app" onclick="openApp('email')">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/new-post.png" alt="Email Icon">
+          <span>Email</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div id="calculator" class="app-screen">
+      <button class="back-btn" onclick="goHome()">Back</button>
+      <h3>Calculator</h3>
+      <input type="text" id="calcDisplay" class="calc-display" readonly>
+      <div class="calc-buttons">
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+        <button onclick="press('/')">/</button>
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+        <button onclick="press('*')">*</button>
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+        <button onclick="press('-')">-</button>
+        <button onclick="press('0')">0</button>
+        <button onclick="press('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="press('+')">+</button>
+        <button onclick="clearDisplay()" style="grid-column: span 4; background: orange;">Clear</button>
+      </div>
+    </div>
+
+    <!-- NOTES -->
+    <div id="notes" class="app-screen">
+      <button class="back-btn" onclick="goHome()">Back</button>
+      <h3>Notes</h3>
+      <textarea placeholder="Write your notes here..."></textarea>
+    </div>
+
+    <!-- EMAIL -->
+    <div id="email" class="app-screen">
+      <button class="back-btn" onclick="goHome()">Back</button>
+      <h3>Email</h3>
+      <div class="window">
+        <p class="topbar">Email</p>
+        <p class="textfield">Subject: Repeat Evaluation of Avidità</p>
+        <p class="textfield">From: <u>curatoryoffice@goma.org</u></p>
+        <p class="textfield">To: <u>tdrakewayne@went.com</u></p>
+        <p class="textfield">CC: <u>tfox02@went.com, legalaidfoundationofgotham@lafg.org</u></p>
+        <div class="ebody">
+          <p>Dear Mr. Drake,</p>
+          <p>We would like to inform you that Avidità will be undergoing a repeat evaluation for authenticity prior to display. This is standard procedure for high-value acquisitions. Please feel free to reach out with any inquiries.</p>
+          <p>Regards,</p>
+          <p>GOMA Board of Directors</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
